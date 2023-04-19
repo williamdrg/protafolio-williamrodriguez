@@ -1,0 +1,242 @@
+/***Formulario de contacto ***/
+:focus {
+    outline: none;
+}
+
+.form__section {
+    width: 75%;
+    /* width: 45rem;
+    height: 32rem; */
+    /* max-width: 760px; */
+    margin: auto;
+    display: flex;
+    /* flex-direction: column; */
+
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(207, 224, 17);
+}
+
+
+/* Información de contacto */
+.contact__info::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(91, 119, 232);
+    opacity: 0.8;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.contact__info{
+    /* width: 38%; */
+    flex-grow: 1;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('../img/fondo_contact.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.info__title,
+.info__items {
+    position: relative;
+    z-index: 2;
+}
+
+.info__title {
+    margin-bottom: 60px;
+}
+
+.img_contact {
+    display: flex;
+    justify-content: center;
+    width: 13.3rem;
+}
+
+.img_contact img{
+    width: 100%;
+    margin-bottom: 15px;
+    
+}
+
+.info__title h2 {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.info__list__contact {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight:400;
+    padding: 1.5rem;
+    
+}
+
+.info__list__contact li:first-child {
+    list-style-image: url(../icon/icon_gmail.png);
+    
+}
+
+.info__list__contact li:nth-child(2) {
+    list-style-image: url(../icon/icon_whatsapp.png);
+}
+
+/* Formulario de contacto */
+
+.form_contact {
+    /* width: 62%; */
+    flex-grow: 3;
+    padding: 2rem 2.5rem;
+}
+
+.form_contact h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.user__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.user__info label {
+    font-weight: 600;
+}
+
+.user__info input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.user__info textarea {
+    border: 1px solid black;
+}
+
+.form_contact input[type="button"] {
+    width: 180px;
+    background-color: rgb(113, 113, 230);
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    margin: 8px 0px;
+
+    font-weight: 600;
+    cursor: pointer;
+
+    align-self: flex-end;
+}
+
+.form_contact input[type="button"]:hover {
+    color: var(--color-form);
+    background-color: var(--color-font);
+}
+
+/* Modal errores */
+.modal__wrap {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.453);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message__modal {
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    padding: 30px 20px 15px;
+    
+}
+
+.message__modal h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.message__modal h3::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #c5c5c5;
+    margin: 10px 0px 15px;
+}
+
+.message__modal p {
+    font-size: 1rem;
+    color: #606060;
+}
+
+.message__modal p::before {
+    content: '❎';
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.message__modal #btn__close {
+    display: inline-block;
+    padding: 3px 10px;
+    margin-top: 10px;
+
+    background-color: #E25151;
+    color: #fff;
+    border: 2px solid #b14141;
+    cursor: pointer;
+
+    position: relative;
+    left: 280px;
+}
+
+@media screen and (max-width: 768px) {
+    .form__section {
+        flex-direction: column;
+    }
+
+    .info__title h2 {
+        font-size: 1.5rem;
+       
+    }
+    
+    .info__list__contact {
+        font-size: .8rem;
+        
+    }
+
+    .form_contact input[type="button"] {
+       align-self: center;
+    }
+
+}
+
+@media screen and (max-width: 321px) {
+    .message__modal {
+        width: 90%;
+    }
+
+    .message__modal #btn__close {
+        left: 0;
+    }
+
+}
