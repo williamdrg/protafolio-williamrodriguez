@@ -124,6 +124,10 @@ header .iconMenu {
     gap: 1rem;
 }
 
+.section__container p {
+    text-align: justify;
+}
+
 .home__title {
     font-size: 2.5rem; 
 }
@@ -140,7 +144,7 @@ header .iconMenu {
 }
 
 .logo_img {
-    width: 6rem;
+    width: 3.5rem;
 }
 
 .portfolios {

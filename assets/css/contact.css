@@ -18,6 +18,10 @@
     box-shadow: 0px 0px 20px rgba(207, 224, 17);
 }
 
+.formdark {
+    background-color: #3D3680;  
+}
+
 
 /* Información de contacto */
 .contact__info::before{

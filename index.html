@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Rubik&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="assets/css/estilos.css">
     <script src="assets/javascript/main.js" defer></script>
     <script src="assets/javascript/jquery-3.6.3.min.js"></script>
     <script src="assets/javascript/contact.js"></script>
@@ -23,7 +22,7 @@
         <i class='iconMenu bx bx-menu'></i>
         <nav class="navbar">
 
-            <span class="logo_img"><img src="assets/img/logo1.png" alt="imagen de logo"></span>
+            <span class="logo_img"><img src="assets/img/Logow.png" alt="imagen de logo"></span>
             <ul class="navbar__menu">
                 <li><a class="link active" href="#home">Inicio</a></li>
                 <li><a class="link" href="#about">Sobre Mí</a></li>
@@ -39,23 +38,10 @@
     <main class="main__principal">
         
         <section class="section__container hidden" id="home">
-          
-               <div class="content-all">
-                   <div class="content-carrousel">
-                       <figure><img src="assets/img/img1.jpg"></figure>
-                       <figure><img src="assets/img/img2.jpg"></figure>
-                       <figure><img src="assets/img/img3.jpg"></figure>
-                       <figure><img src="assets/img/img4.jpg"></figure>
-                       <figure><img src="assets/img/img5.jpg"></figure>
-                       <figure><img src="assets/img/img6.jpg"></figure>
-                       <figure><img src="assets/img/img7.jpg"></figure>
-                       <figure><img src="assets/img/img8.jpg"></figure>
-                       <figure><img src="assets/img/img9.jpg"></figure>
-                       <figure><img src="assets/img/img10.jpg"></figure>
-                    </div>
-                </div>
-                 <h1 class="home__title">Hola, soy <span>William Rodriguez</span> y soy <span>desarrollador Front-End.</span></h1> 
-
+            <div class="about_img">
+                <img src="assets/img/yo.png" alt="foto de persona">
+            </div>
+            <h1 class="home__title">Hola, soy <span>William Rodriguez</span> y soy <span>desarrollador Front-End.</span></h1> 
         </section>
 
         <section class="section__container hidden" id="about">
@@ -65,9 +51,7 @@
             </p>
             <p>Mi enfoque es crear aplicaciones web rápidas y eficientes con un diseño moderno y amigable para el usuario. Creo en el trabajo en equipo y la colaboración, y disfruto trabajar en un entorno donde puedo aprender de mis colegas y contribuir con mis habilidades y experiencia. Si estás buscando un desarrollador de software dedicado y comprometido para tu equipo, no dudes en ponerte en contacto conmigo. Estoy ansioso por trabajar contigo en tu próximo proyecto emocionante.
             </p>
-            <dir class="about_img">
-                <img src="assets/img/yo.png" alt="foto de persona">
-            </dir>
+            
 
         </section>
 
@@ -88,9 +72,9 @@
                             </div>
                             <div class="card__back">
                                 <div class="body__card_back">
-                                    <h2>Próximamente</h2>
-                                    <p>Estoy preparando algo asombroso y emocionante para ti.</p>
-                                    <input type="button" value="Ver Demo">
+                                    <h2>Galletas de la fortuna</h2>
+                                    <p>¿Quieres probar tu suerte? Descubre el mensaje de tu galleta de la fortuna en nuestra página. La dulzura de la vida en cada bocado. Bienvenidos.</p>
+                                    <a href="https://galletasdelafortuna.netlify.app/" target="_blank"><input type="button" value="Ver"></a>
                                 </div>
                             </div>
                         </div>
@@ -106,9 +90,9 @@
                             </div>
                             <div class="card__back">
                                 <div class="body__card_back">
-                                    <h2>Próximamente</h2>
-                                    <p>Estoy preparando algo asombroso y emocionante para ti.</p>
-                                    <input type="button" value="Ver Demo">
+                                    <h2>WeatherApp</h2>
+                                    <p>Aunque el clima cambie constantemente, nuestra página del clima siempre te brindará una cálida bienvenida. Descubre las condiciones actuales y prepárate para lo que el día tenga preparado. ¡Bienvenidos!</p>
+                                    <a href="https://climateapplication1.netlify.app/" target="_blank"><input type="button" value="Ver"></a>
                                 </div>
                             </div>
                         </div>
@@ -126,7 +110,7 @@
                                 <div class="body__card_back">
                                     <h2>Próximamente</h2>
                                     <p>Estoy preparando algo asombroso y emocionante para ti.</p>
-                                    <input type="button" value="Ver Demo">
+                                    <input type="button" value="Ver">
                                 </div>
                             </div>
                         </div>
@@ -144,7 +128,7 @@
                                 <div class="body__card_back">
                                     <h2>Próximamente</h2>
                                     <p>Estoy preparando algo asombroso y emocionante para ti.</p>
-                                    <input type="button" value="Ver Demo">
+                                    <input type="button" value="Ver">
                                 </div>
                             </div>
                         </div>
@@ -176,7 +160,7 @@
                     
                 </div>
                 
-                <form class="form_contact" name="contact" netlify action="/completed">
+                <form class="form_contact" name="contact" netlify action="./completed/reply.html" id="form">
                     <h3>Enviar un mensaje</h3>
                     <div class="user__info">
                         

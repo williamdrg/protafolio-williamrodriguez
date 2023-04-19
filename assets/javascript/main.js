@@ -49,11 +49,20 @@ links.forEach(link => {
 //darktheme
 
 const iconTheme = document.querySelector(".iconTheme");
+const miForm = document.getElementById("form");
 
 iconTheme.addEventListener('click', () => {
     if (document.body.classList.toggle("darkTheme")) {
         iconTheme.textContent = "🌙"
+        formthemeDark("form_contact"); // Llamada a la función que cambia la clase de la etiqueta form
     } else {
         iconTheme.textContent = "☀️"
+        formthemeDark("formdark"); // Llamada a la función que cambia la clase de la etiqueta form
     }
 })
+
+
+const formthemeDark = (dark) => {
+    miForm.classList.remove("formdark"); // Elimina la clase anterior (en caso de que exista)
+    miForm.classList.add(dark); // Agrega la nueva clase
+}
