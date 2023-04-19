@@ -176,15 +176,15 @@
                     
                 </div>
                 
-                <form class="form_contact" action="">
-                    <h3>Evia un mensaje</h3>
+                <form class="form_contact" name="contact" netlify>
+                    <h3>Enviar un mensaje</h3>
                     <div class="user__info">
                         
                         <label for="names">Nombre *</label>
-                        <input type="text" id="names">
+                        <input type="text" id="names" name="name">
                         
                         <label for="email">Correo Electrónico *</label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" name="email">
                         
                         <label for="subject">Asunto *</label>
                         <input type="text" id="subject">
@@ -192,7 +192,9 @@
                         <label for="message">Mensaje *</label>
                         <textarea class="textarea" name="comentUser" id="comentUser" cols="30" rows="10" placeholder="Escríbreme..."></textarea>
                         
-                        <input  type="button" value="Enviar mensaje" id="btnSend">
+                        <button  type="submit" id="btnSend">
+                            Enviar mensaje
+                        </button>
                     </div>
                 </form>
                 
