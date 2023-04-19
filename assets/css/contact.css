@@ -130,7 +130,7 @@
     border: 1px solid black;
 }
 
-.form_contact input[type="button"] {
+.form_contact button[type="submit"] {
     width: 180px;
     background-color: rgb(113, 113, 230);
     padding: 10px;
@@ -144,9 +144,9 @@
     align-self: flex-end;
 }
 
-.form_contact input[type="button"]:hover {
+.form_contact button[type="submit"]:hover {
     color: var(--color-form);
-    background-color: var(--color-font);
+    background-color: yellow;
 }
 
 /* Modal errores */
@@ -241,6 +241,10 @@
 
     .message__modal #btn__close {
         left: 0;
+    }
+
+    .form_contact button[type="submit"] {
+        width: 150px;
     }
 
 }

@@ -1,6 +1,7 @@
 $(document).ready(function () {
-    $('#btnSend').click(function (){
-        
+    $('#btnSend').click(function (e){
+        e.preventDefault();
+
         let errors = '';
 
         // validando el nombre --- val = valor
@@ -33,7 +34,10 @@ $(document).ready(function () {
         }
       
         // enviando mensaje
-        if (errors  === '' == false) {
+        if (errors  === '') {
+            // si no hay errores, enviamos el formulario
+            $('#form').submit();
+        } else {    
             let messageModal = '<div class="modal__wrap">' + 
                                     '<div class="message__modal">' +
                                         '<h3>Errores encontrados</h3>' +

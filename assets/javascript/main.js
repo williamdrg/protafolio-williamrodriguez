@@ -50,14 +50,17 @@ links.forEach(link => {
 
 const iconTheme = document.querySelector(".iconTheme");
 const miForm = document.getElementById("form");
+const menuDark = document.getElementById("navbar__menu");
 
 iconTheme.addEventListener('click', () => {
     if (document.body.classList.toggle("darkTheme")) {
         iconTheme.textContent = "🌙"
         formthemeDark("form_contact"); // Llamada a la función que cambia la clase de la etiqueta form
+        navbarDark("navbar__menu")
     } else {
         iconTheme.textContent = "☀️"
         formthemeDark("formdark"); // Llamada a la función que cambia la clase de la etiqueta form
+        navbarDark("navbar__menu__dark")
     }
 })
 
@@ -65,4 +68,9 @@ iconTheme.addEventListener('click', () => {
 const formthemeDark = (dark) => {
     miForm.classList.remove("formdark"); // Elimina la clase anterior (en caso de que exista)
     miForm.classList.add(dark); // Agrega la nueva clase
+}
+
+const navbarDark = (mdark) => {
+    menuDark.classList.remove("navbar__menu__dark");
+    menuDark.classList.add(mdark)
 }
