@@ -121,7 +121,7 @@ header .iconMenu {
     align-items: center;
     flex-direction: column;
     gap: 1rem;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .section__container p {
